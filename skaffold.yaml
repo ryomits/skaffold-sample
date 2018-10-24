@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1alpha4
+kind: Config
+build:
+  artifacts:
+    - image: rmitsui/skaffold-sample
+deploy:
+  kubectl:
+    manifests:
+    - skaffold-*
